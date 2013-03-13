@@ -363,10 +363,14 @@
 		AF9A358C16F01ECD00087761 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Myungjin Choi (Q4L2YCHP7Y)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Myungjin Choi (Q4L2YCHP7Y)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KT-Group-Local-iOS/KT-Group-Local-iOS-Prefix.pch";
 				INFOPLIST_FILE = "KT-Group-Local-iOS/KT-Group-Local-iOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "596CE99F-5168-44C4-A3F1-C2CE2EE14D16";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "596CE99F-5168-44C4-A3F1-C2CE2EE14D16";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -374,10 +378,14 @@
 		AF9A358D16F01ECD00087761 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: KT Hitel Co., Ltd.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: KT Hitel Co., Ltd.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KT-Group-Local-iOS/KT-Group-Local-iOS-Prefix.pch";
 				INFOPLIST_FILE = "KT-Group-Local-iOS/KT-Group-Local-iOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "FC9133B1-459C-48F6-A528-81F35B0B6466";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FC9133B1-459C-48F6-A528-81F35B0B6466";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -435,6 +443,7 @@
 				AF9A358D16F01ECD00087761 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF9A358E16F01ECD00087761 /* Build configuration list for PBXNativeTarget "KT-Group-Local-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +452,7 @@
 				AF9A359016F01ECD00087761 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
