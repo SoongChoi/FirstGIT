@@ -11,6 +11,8 @@
 #import "ViewController.h"
 #import "HHTabListController.h"
 
+#import "MapViewController.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -22,13 +24,21 @@
 	NSMutableArray *viewControllers = [NSMutableArray arrayWithCapacity:[titles count]];
 	
 	for (NSString *title in titles) {
-		UIViewController *viewController = [[ViewController alloc] init];
-        
-		[viewController setTitle:title];
-		
-		UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
-        
-		[viewControllers addObject:navigationController];
+        if([title isEqualToString:@"지도"]){
+            MapViewController *mapViewController = [[MapViewController alloc]init];
+            [mapViewController setTitle:title];
+            UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mapViewController];
+            
+            [viewControllers addObject:navigationController];
+        }else{
+            UIViewController *viewController = [[ViewController alloc] init];
+            
+            [viewController setTitle:title];
+            
+            UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+            
+            [viewControllers addObject:navigationController];
+        }
 	}
 	
 	UIViewController *viewController = [[HHTabListController alloc] initWithViewControllers:viewControllers];
