@@ -8,13 +8,31 @@
 
 #import "AppDelegate.h"
 
+#import "ViewController.h"
+#import "HHTabListController.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    
+    NSArray *titles = [NSArray arrayWithObjects:@"연락처", @"지도", @"회원가입", @"인증", nil];
+	NSMutableArray *viewControllers = [NSMutableArray arrayWithCapacity:[titles count]];
+	
+	for (NSString *title in titles) {
+		UIViewController *viewController = [[ViewController alloc] init];
+        
+		[viewController setTitle:title];
+		
+		UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+        
+		[viewControllers addObject:navigationController];
+	}
+	
+	UIViewController *viewController = [[HHTabListController alloc] initWithViewControllers:viewControllers];
+    self.window.rootViewController = viewController;
     [self.window makeKeyAndVisible];
     return YES;
 }
