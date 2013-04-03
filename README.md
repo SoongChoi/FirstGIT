@@ -1,5 +1,10 @@
 FirstGIT
-========
+---
+
 It's HOTFIX Master
-hotfix-1st updated
-updated hotfix 1234
+
+hotfix-**1st** updated
+
+updated hotfix **1234**
+
+![Alt favorite star](http://www.nemopan.com/pan_performer/files/attach/images/421/345/292/003/%ED%95%98%EC%A7%80%EC%9B%90_010.jpg "Cute Baby!")
