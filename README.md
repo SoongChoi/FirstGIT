@@ -9,7 +9,7 @@ updated hotfix **1234**
 
 updated hotfix **4321**
 
-it's New Update
+it's New Update from PC
 
 Hotfix added from MAC.~~~~
 
