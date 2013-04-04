@@ -20,7 +20,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    NSArray *titles = [NSArray arrayWithObjects:@"연락처", @"지도", @"회원가입", @"인증", nil];
+    NSArray *titles = [NSArray arrayWithObjects:@"연락처", @"지도", @"회원가입", @"설정", @"버전정보", nil];
 	NSMutableArray *viewControllers = [NSMutableArray arrayWithCapacity:[titles count]];
 	
 	for (NSString *title in titles) {
